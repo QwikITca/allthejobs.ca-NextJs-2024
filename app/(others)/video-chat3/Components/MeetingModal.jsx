@@ -23,10 +23,10 @@ const MeetingModal = ({
   scheduling
 }) => {
   return (
-    <Dialog open={isOpen} onOpenChange={onClose} >
+    <Dialog open={isOpen} onOpenChange={onClose}  >
       <DialogTrigger></DialogTrigger>
       <DialogTitle></DialogTitle>
-      <DialogContent className='flex w-full  flex-col gap-6 border-none bg-white'>
+      <DialogContent className='flex w-full  flex-col gap-6 border-none bg-white max-h-[85vh] overflow-y-auto '>
         <div className='flex flex-col gap-6 '>
           {image && (
             <div className='flex justify-center'>

@@ -168,7 +168,7 @@ const ScheduleMeeting = ({
 								mode="single"
 								selected={values.datetime}
 								onSelect={(date) => setValues({...values, datetime: date})}
-								className="rounded-md border w-full"
+								className="rounded-md border w-full md:p-3 p-1"
 								disabled={{before: today}}
 							/>
 						</div>

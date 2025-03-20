@@ -140,7 +140,7 @@ export default function SlotManagement() {
 		return <Spinner />;
 	}
 	const maxDate = new Date();
-	maxDate.setDate(maxDate.getDate() + 7);
+	maxDate.setDate(maxDate.getDate() + 30);
 
 	return (
 		<div className="container mx-auto p-4">
@@ -198,7 +198,7 @@ export default function SlotManagement() {
 							key={index}
 							className={`cursor-pointer border border-gray-200 rounded-lg p-3 shadow-sm hover:shadow-md transition-shadow duration-200  ${
 								requestedSlots.includes(slot)
-									? 'disabled:bg-gray-400 disabled:cursor-not-allowed'
+									? 'disabled:bg-red-600 disabled:cursor-not-allowed text-white'
 									: selectedSlots.includes(slot)
 									? 'bg-blue-400'
 									: 'bg-white'
